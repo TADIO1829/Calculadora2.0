@@ -39,7 +39,7 @@ public class Normales {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Double suma = numero + numero2;
-                resultado.setText(suma.toString());
+                resultado.setText(String.format("%.2f", suma));
 
             }
         });
@@ -48,7 +48,7 @@ public class Normales {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Double multi = numero * numero2;
-                resultado.setText(multi.toString());
+                resultado.setText(String.format("%.2f", multi));
 
             }
         });
@@ -56,7 +56,7 @@ public class Normales {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Double resta = numero - numero2;
-                resultado.setText(resta.toString());
+                resultado.setText(String.format("%.2f", resta));
 
             }
         });
@@ -65,6 +65,7 @@ public class Normales {
             public void actionPerformed(ActionEvent e) {
                 if(numero2!=0){
                     Double division = numero / numero2;
+                    resultado.setText(String.format("%.2f", division));
 
                 }else{
                     System.out.println("No se puede dividir el numero");

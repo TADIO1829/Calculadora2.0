@@ -8,8 +8,8 @@ public class Main {
         JFrame frame = new JFrame("Calculadora");
         frame.setContentPane(new Menu().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 500);
-        frame.setPreferredSize(new Dimension(1024, 768));
+        frame.setSize(700, 200);
+        frame.setPreferredSize(new Dimension(700, 200));
         frame.pack();
         frame.setVisible(true);
 

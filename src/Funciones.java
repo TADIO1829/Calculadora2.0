@@ -26,7 +26,8 @@ public class Funciones {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Double seno = Math.sin(Math.toRadians(numero));
-                resultado.setText(seno.toString());
+                resultado.setText(String.format("%.2f", seno));
+
 
             }
         });
@@ -34,14 +35,14 @@ public class Funciones {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Double coseno = Math.cos(Math.toRadians(numero));
-                resultado.setText(coseno.toString());
+                resultado.setText(String.format("%.2f", coseno));
             }
         });
         tangenteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Double tangente = Math.cos(Math.toRadians(numero));
-                resultado.setText(tangente.toString());
+                resultado.setText(String.format("%.2f", tangente));
 
             }
         });
@@ -49,7 +50,7 @@ public class Funciones {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Double raiz=Math.sqrt(numero);
-                resultado.setText(raiz.toString());
+                resultado.setText(String.format("%.2f", raiz));
             }
         });
     }

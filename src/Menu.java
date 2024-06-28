@@ -7,7 +7,6 @@ public class Menu {
     public JPanel panel1;
     public JButton normalesButton;
     public JButton funcionesButton;
-    public JButton raizButton;
 
     public Menu() {
         normalesButton.addActionListener(new ActionListener() {
@@ -16,9 +15,9 @@ public class Menu {
                 JFrame jf = new JFrame("pe");
                 jf.setContentPane(new Normales().panel1);
                 jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                jf.setSize(800, 600);
-                jf.setPreferredSize(new Dimension(800, 600));
-                jf.setMinimumSize(new Dimension(800, 600));
+                jf.setSize(700, 200);
+                jf.setPreferredSize(new Dimension(700, 200));
+                jf.setMinimumSize(new Dimension(700, 200));
                 jf.pack();
                 jf.setVisible(true);
                 ((JFrame) SwingUtilities.getWindowAncestor(normalesButton)).dispose();
@@ -31,9 +30,9 @@ public class Menu {
                 JFrame j2 = new JFrame("Funciones");
                 j2.setContentPane(new Funciones().panel1);
                 j2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                j2.setSize(800, 600);
-                j2.setPreferredSize(new Dimension(800, 600));
-                j2.setMinimumSize(new Dimension(800, 600));
+                j2.setSize(700, 200);
+                j2.setPreferredSize(new Dimension(700, 200));
+                j2.setMinimumSize(new Dimension(700, 200));
                 j2.pack();
                 j2.setVisible(true);
                 ((JFrame) SwingUtilities.getWindowAncestor(normalesButton)).dispose();
