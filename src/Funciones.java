@@ -41,7 +41,7 @@ public class Funciones {
         tangenteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Double tangente = Math.cos(Math.toRadians(numero));
+                Double tangente = Math.tan(Math.toRadians(numero));
                 resultado.setText(String.format("%.2f", tangente));
 
             }
