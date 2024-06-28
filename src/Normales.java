@@ -68,7 +68,7 @@ public class Normales {
                     resultado.setText(String.format("%.2f", division));
 
                 }else{
-                    System.out.println("No se puede dividir el numero");
+                    resultado.setText("No se puede dividir para el numero 0");
                 }
             }
         });
